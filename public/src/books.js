@@ -1,6 +1,8 @@
 function findAuthorById(authors, id) {
 
-  return authors.find((author)=>author.id===id);
+  let result =authors.filter((author) => author.id ===id);
+  let returnObj=result[0]; 
+  return returnObj;
 }
 
 function findBookById(books, id) {
